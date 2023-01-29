@@ -1,0 +1,241 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #383B50;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+.header{
+    background-color: rgb(18, 19, 19);
+    color: #eee;
+    text-align: center;
+    padding: 30px 30px;
+}
+
+.header .header-title{
+    margin-bottom:10px;
+}
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #232533;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #eee;
+    font-size: 18px;
+    padding: 20px 15px;
+    transition: background-color 0.3s;
+    transition: color 0.3s;
+    transition: transform 0.5s;
+}
+
+.navbar a:hover{
+    background-color: #15161e;
+    color:#359DFE;
+    transform: scale(1.1);
+}
+
+.logo{
+    color:#359DFE;
+    margin-right: auto;
+    padding: 0 15px;
+    
+}
+
+.container{
+    display: flex;
+    height: 100%;
+    margin: 50px 50px;
+    background-color: #323448;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    background-color: #262a3c;
+    flex: 80%;
+    margin: 30px;
+    padding: 50px;
+    align-items: center;
+}
+
+.main .content-image{
+    width: 100%;
+    border-radius: 10px;
+    justify-content: center;
+    transition: transform 0.5s;
+}
+
+.main .content-image:hover{
+    transform: rotate(-1deg) scale(1.03);
+
+}
+
+.main h1{
+    color:#7d82aa;
+    margin: 15px 0;
+
+}
+
+.main p{
+    color:#a4a6b6;
+    text-align: center;
+
+}
+
+.main button{
+    margin-top: 20px;
+    font-size: 18px;
+    width: 200px;
+    border:0;
+    border-radius: 10px;
+    background-color: #15161e;
+    color: #a4a6b6;
+    padding: 5px 0px;
+}
+
+.main button:hover{
+    background-color: #464b5f;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.aside{
+    display: flex;
+    flex-direction: column;
+    flex: 20%;
+    margin: 30px;
+    padding: 50px;
+    background-color: #262a3c;
+    align-items: center;
+    text-align: center;
+}
+
+.aside .title{
+    width: 100%;
+    background-color: #12141d;
+    color:#eee;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.aside .aside-image{
+    width: 100%;
+    border-radius: 100%;
+    max-height: 200px;
+    max-width: 200px;
+    transition: transform .3s;
+}
+
+.aside h1{
+    color: #7d82aa;
+    margin: 15px 0
+}
+
+.aside p{
+    color: #a4a6b6;
+    max-height: 100px;
+    overflow: hidden;
+}
+
+.aside span{
+    width: 100%;
+    height: 30px;
+    margin-top: -25px;
+    background: linear-gradient(to bottom, rgba(255,0,0,0), rgb(38, 42, 60,1));
+    margin-bottom: 30px;
+}
+
+.aside .aside-image:hover{
+    transform: scale(1.05);
+}
+
+hr{
+    width: 100%;
+    height: 2px;
+    border: 0;
+    background-color: rgba(255,255,255,0.1);
+    margin: 50px 0
+}
+
+.footer{
+    display: flex;
+    background-color:#232533;
+    height: 100px;
+    color: #eee;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer .footer-menu{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.footer .footer-menu a{
+    color:#eee;
+    font-size: 14px;
+    margin: 5px 0px;
+}
+
+/* ---------- RESPONSIVE MEDIA ------------ */
+
+
+@media all and (max-width:1000px) {
+   
+    .navbar{
+        flex-direction: column;
+        display: block;
+    }
+
+    .navbar a{
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid #5555
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+}
+
+@media all and (max-width:1200px) {
+    .logo{
+        display: none;
+    }
+
+    .navbar{
+        justify-content: space-around;
+    }
+    
+    .main h1, .aside h1{
+        font-size: 17px;
+    }
+
+    .main p, .aside p{
+        font-size: 15px;
+    }
+
+}
+
+
+@media all and (max-width:600px) {
+        
+    .container, .main, .aside {
+        margin:0;
+    }
+
+}
+
