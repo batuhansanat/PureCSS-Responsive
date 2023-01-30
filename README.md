@@ -1,4 +1,4 @@
-# PureCSS-Responsive
+# PureCSS-Responsive Example
 
 [DEMO](https://purecss-responsive.netlify.app/)
 
